@@ -127,6 +127,10 @@ body {
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
 }
 
+.hero .content p span {
+    font-weight: 550;
+}
+
 .hero .content .cta {
     margin-top: 1rem;
     display: inline-block;
@@ -134,7 +138,7 @@ body {
     color: black;
     background-color: var(--primary);
     border-radius: 3rem;
-    box-shadow: 1px 1px 3px rgba(3, 3, 3, 0.5) ;
+    box-shadow: 1px 1px 3px rgba(3, 3, 3, 0.5);
     font-weight: 550;
 }
 
