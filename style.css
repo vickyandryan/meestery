@@ -17,7 +17,6 @@ body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--bg);
     color: white;
-
 }
 
 /* navbar */
@@ -26,7 +25,7 @@ body {
     justify-content: space-between;
     align-items: center;
     padding: 1.4rem 7%;
-    background-color: rgba(10, 10, 10 0.8);
+    background-color: rgba(1, 1, 1, 0.8);
     border-bottom: 1px solid var(--primary);
     position: fixed;
     top: 0;
@@ -85,6 +84,58 @@ body {
 
 #menu {
     display: none;
+}
+
+/* hero */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background-image: url('1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    display: block;
+    position: absolute;
+    height: 20%;
+    width: 100%;
+    background: linear-gradient(0deg, rgba(10, 10, 10, 1)6%, rgba(255, 255, 255, 0)50%);
+    bottom: 0;
+}
+
+.hero .content {
+    padding: 1.4rem 7%;
+    max-width: 60rem;
+}
+
+.hero .content h1 {
+    font-size: 5em;
+    color: var(--bg);
+    text-shadow: 1px 1px 3px rgba(214, 214, 214, 0.5);
+}
+
+.hero .content p {
+    font-size: 1.6rem;
+    margin-top: 1rem;
+    line-height: 1.4;
+    font-weight: 300;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.hero .content .cta {
+    margin-top: 1rem;
+    display: inline-block;
+    padding: 1rem 3rem;
+    color: black;
+    background-color: var(--primary);
+    border-radius: 3rem;
+    box-shadow: 1px 1px 3px rgba(3, 3, 3, 0.5) ;
+    font-weight: 550;
 }
 
 /* Media Queris */
